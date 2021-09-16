@@ -29,11 +29,11 @@ public class Exercise {
         this.highestScoreToGet = highestScoreToGet;
     }
 
-    Exercise(){
+    Exercise() {
 
     }
 
-    Exercise(String numberOfExercise, String descriptionOfExercise, int highestScoreToGet){
+    Exercise(String numberOfExercise, String descriptionOfExercise, int highestScoreToGet) {
         this.numberOfExercise = numberOfExercise;
         this.descriptionOfExercise = descriptionOfExercise;
         this.highestScoreToGet = highestScoreToGet;

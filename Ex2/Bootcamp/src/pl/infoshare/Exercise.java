@@ -5,29 +5,14 @@ public class Exercise {
     private String descriptionOfExercise;
     private int highestScoreToGet;
 
-    public String getNumberOfExercise() {
-        return numberOfExercise;
-    }
 
-    public void setNumberOfExercise(String numberOfExercise) {
-        this.numberOfExercise = numberOfExercise;
-    }
+    public String getNumberOfExercise() { return numberOfExercise; }
+    public void setNumberOfExercise(String numberOfExercise) { this.numberOfExercise = numberOfExercise; }
+    public String getDescriptionOfExercise() { return descriptionOfExercise; }
+    public void setDescriptionOfExercise(String descriptionOfExercise) { this.descriptionOfExercise = descriptionOfExercise; }
+    public int getHighestScoreToGet() { return highestScoreToGet; }
+    public void setHighestScoreToGet(int highestScoreToGet) { this.highestScoreToGet = highestScoreToGet; }
 
-    public String getDescriptionOfExercise() {
-        return descriptionOfExercise;
-    }
-
-    public void setDescriptionOfExercise(String descriptionOfExercise) {
-        this.descriptionOfExercise = descriptionOfExercise;
-    }
-
-    public int getHighestScoreToGet() {
-        return highestScoreToGet;
-    }
-
-    public void setHighestScoreToGet(int highestScoreToGet) {
-        this.highestScoreToGet = highestScoreToGet;
-    }
 
     Exercise() {
 

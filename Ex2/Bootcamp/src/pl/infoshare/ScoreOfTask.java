@@ -5,30 +5,26 @@ public class ScoreOfTask {
     private int numberOfPointsScored;
     private String feedback;
 
+
     public Exercise getParticularExercise() {
         return particularExercise;
     }
-
     public void setParticularExercise(Exercise particularExercise) {
         this.particularExercise = particularExercise;
     }
-
-
     public int getNumberOfPointsScored() {
         return numberOfPointsScored;
     }
-
     public void setNumberOfPointsScored(int numberOfPointsScored) {
         this.numberOfPointsScored = numberOfPointsScored;
     }
-
     public String getFeedback() {
         return feedback;
     }
-
     public void setFeedback(String feedback) {
         this.feedback = feedback;
     }
+
 
     ScoreOfTask(){
 

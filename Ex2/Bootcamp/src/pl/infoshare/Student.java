@@ -1,9 +1,13 @@
 package pl.infoshare;
 
+import java.util.ArrayList;
+
 public class Student {
     private String nameOfStudent;
     private String surnameOfStudent;
     private String gitHubLoginOfStudent;
+    private ArrayList<ScoreOfTask> listOfScores = new ArrayList<>();
+
 
     public String getNameOfStudent() {
         return nameOfStudent;
@@ -38,5 +42,19 @@ public class Student {
         this.surnameOfStudent = surnameOfStudent;
         this.gitHubLoginOfStudent = gitHubLoginOfStudent;
     }
+
+    public void addScoreOfTask(ScoreOfTask particularScore){
+        listOfScores.add(particularScore);
+    }
+
+    public ScoreOfTask getScoreOfTaskByExerciseName(String particularNumberOfExercise ){
+        for (int i = 0; i < listOfScores.size(); i++){
+            if (listOfScores.get(i).getParticularExercise().getNumberOfExercise().equals(particularNumberOfExercise)){
+                return listOfScores.get(i);
+            }
+        }
+        return null;
+    }
+
 
 }

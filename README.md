@@ -1,26 +1,55 @@
-# Zadania domowe dla kursu JJDZR4
+# Zadanie 2 - Podstawy programowania Java SE
+### Zakres: klasa, obiekt, konstruktor, getter, setter + git 
 
-## Zasady
 
-1. Każda praca domowa powinna być wykonana w tym repozytorium.
-1. Należy utworzyć nowy branch w konwencji `nrZadania_ImieNazwisko` (np: `1_MariuszSzymanski`) i na tym branchu przygotować rozwiązanie zadania.
-1. Rozwiązanie każdego z zadań powinno się znaleźć w tym samym folderze, w którym znajduje się plik z treścią zadania (np. rozwiązanie zadania nr 1 powinno znaleźć się w folderze Ex1).
-1. Przed rozpoczęciem pracy nad nowym zadaniem należy zawsze zrobić pull brancha `main`, a następnie utworzyć sobie nowy branch do wykonania zadania, wychodząc zawsze z brancha `main`.
-1. Pushowanie na branch `main` jest zablokowane.
-1. Stosujemy dobre praktyki commitowania kodu (https://www.git-tower.com/learn/git/ebook/en/command-line/appendix/best-practices).
-1. Treść commitów piszemy po angielsku, nie korzystamy z wiadomości typu: "test", "test commit", "rozwiązanie", itp.
-1. Piszemy przejrzysty kod z odpowiednimi zagnieżdżeniami (pamiętaj: możesz korzystać ze skrótu IntelliJ do formatowania kodu).
-1. Jeśli uznasz, że Twoje zadanie jest gotowe do sprawdzenia, to daj mi znać na Slacku (`@Mariusz Szymański`).
-1. Termin oddania podany w każdym zadaniu jest ostateczny.
-1. Jako moment oddania liczy się godzina ostatniego wypushowanego commita (lub utworzenia pull requestu, ale o tym więcej przy kolejnych zadaniach).
-1. Zadania oddane po terminie są oceniane na maksymalnie połowę punktów.
-1. Pamiętaj, że punkty zdobyte za rozwiązanie zadań domowych mają istotny wpływ na wynik zaliczeniowy.
-1. Rozwiązania zadań będą trafiać na dedykowane branche o nazwie typu `1_rozwiazanie`, w ciągu tygodnia po upłynięciu terminu oddania.
+## Zadanie "Bootcamp" cz.1 :mortar_board:
 
-## Zadania
-Każde zadanie ma treść opisaną w pliku `README.md` w swoim katalogu.
-Klikając poniższe linki, przejdziesz na stronę z podglądem instrukcji.
+**Cel:**  
+Za pomocą klas w javie chcemy zamodelować prostą aplikację typu „indeks kursanta”. :green_book:  
 
-### [Zadanie 1 - Podstawy programowania Java SE](./Ex1)
+**Założenia:**  
+Rozpoczynamy pracę nad aplikacją dla firmy szkoleniowej (typu infoShare Academy)  :wink:  
+Pierwszą funkcjonalnością, na jakiej bardzo zależy naszemu klientowi, będzie możliwość rejestracji ocen, jakie kursanci otrzymali za zadania domowe.  
 
-### [Zadanie 2 - Podstawy programowania Java SE](./Ex2)
+Jakie informacje zbieramy (utworzymy na ich podstawie klasy z polami):
+- zadanie:
+  - numer (np. Ex1),
+  - treść zadania (krótki opis),
+  - maksymalna liczba punktów za zadanie
+- kursant:
+  - imię,
+  - nazwisko,
+  - login GitHub
+- ocena za zadanie:
+  - jakie zadanie (najlepiej link/referencja do obiektu typu zadanie, nie numer zadania),
+  - który kursant (najlepiej link/referencja do obiektu typu kursant, nie dane kursanta),
+  - liczba zdobytych punktów,
+  - uwagi do rozwiązania (krótki feedback).
+  
+
+**Wymagania:**  
+- utwórz minimum trzy klasy z polami i metodami do ustawiania, i pobierania wartości (gettery i settery), plus klasę typu 'Main' (lub klasę o innej dobrej nazwie z metodą `main()`) do uruchamiania aplikacji,
+- użyj odpowiednich typów dla swoich pól w klasach (np. integer dla liczby punktów, a nie string, np. typ Student dla określenia kursanta),
+- utwórz minimum dwa obiekty zadań domowych (np. ex1, ex2),
+- utwórz minimum dwa obiekty kursantów,
+- utwórz minimum dwa obiekty ocen (różni kursanci / różne zadania),
+- wszystkie obiekty utwórz w klasie 'Main' z wykorzystaniem odpowiedniego konstruktora,
+- wartości pól ustaw za pomocą 'setterów' lub przy pomocy konstruktora,
+- na koniec wypisz na konsolę wszystkie oceny, jakie otrzymali kursanci za zadania domowe, przykład:
+  ```
+  Janek Kowalski za zadanie Ex1 otrzymal 5 pkt.
+  Zenek Nowak za zadanie Ex2 otrzymal 3 pkt.
+  ```
+- przy pobieraniu wartości pól do wypisania na konsolę użyj odpowiednich 'getterów'.
+
+---
+
+## Punktacja
+
+Do zdobycia jest :five: pkt.
+Zadania oddane po terminie są oceniane na maksymalnie połowę punktów.
+
+#### Powodzenia!
+
+### :clock12: Termin oddania:
+## Wtorek, 21.09.2021

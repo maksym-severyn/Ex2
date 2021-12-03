@@ -44,35 +44,6 @@ Jakie informacje zbieramy (utworzymy na ich podstawie klasy z polami):
 
 ---
 
-## Forma oddania zadania
-Zadanie powinno być oddane w formie commitów na oddzielnym branchu o nazwie wg konwencji `nrzadania_ImięNazwisko` (np: `2_MariuszSzymanski`)
-
-Ponieważ **git** wciąż sprawia najwięcej problemów, przejdźmy razem przez wszystkie kroki, które musisz wykonać.
-
-## :building_construction: 
-1. Przejdź w konsoli do miejsca, gdzie masz repozytorium `jjdzr4-homeworks`.
-2. Sprawdź, na jakim branchu aktualnie się znajdujesz za pomocą `git status`. 
-3. Jeśli jesteś na swoim branchu (`On branch 1_TwojeImięNazwisko`) i masz jakieś `Changes to be committed`, to należy dodać commit, żeby nie utracić swojego kodu przy zmianie brancha!
-4. Przejdź na branch `main` za pomocą komendy `git checkout main`. Komunikat na konsoli powinien informować, że zmieniliśmy branch: 
-   ```
-   Switched to branch 'main'
-   Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
-       (use "git pull" to update your local branch)
-   ```
-5. Zgodnie z wyświetloną komendą wykonaj `git pull`, żeby pobrać do swojego lokalnego repozytorium wszystkie zmiany, jakie zaszły na głównym branchu `main` w zdalnym repozytorium `jjdzr4-homeworks` na GitHubie.
-6. Po wykonaniu `git pull` w Twoim lokalnym repozytorium powinien zostać dodany folder `Ex2` z nowym zadaniem do wykonania. 
-7. Stwórz branch o odpowiedniej nazwie, np.: `2_MariuszSzymanski` poprzez: `git checkout -b 2_TwojeImięNazwisko`.
-8. Upewnij się raz jeszcze, że poprawnie założyłeś/aś nowy branch wpisując `git status`. Tekst w konsoli powinien głosić: `On branch 2_TwojeImięNazwisko`. 
-9. Uruchom IntelliJ i utwórz nowy projekt do nowego zadania (np. Bootcamp).  
-Jeśli nie wiesz jak to zrobić, to pomoże w tym ta instrukcja: https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html  
-:exclamation: Zwróć uwagę, żeby odpowiednio ustawić ścieżkę do nowego projektu (Project location) - musi się on znaleźć w katalogu `Ex2` w repozytorium `jjdzr4-homeworks`. To jest bardzo ważne, bo w przeciwnym razie Twoje rozwiązanie nie trafi w odpowiednie miejsce w zdalnym repo na GitHubie. Tak więc, tworząc projekt pod zadanie, sprawdź dokładnie, czy 'Project location' kończy się taką ścieżką: `(jakieś lokalizacja w komputerze)/jjdzr4-homeworks/Ex2/Bootcamp`.
-10. Wykonaj zadanie i commituj wyniki. Aby wykonać commit, najprościej: `git add -A`, a następnie `git commit -m "this is my commit message"`
-11. Wyślij zmiany na GitHub'a za pomocą komendy `git push origin 2_TwojeImięNazwisko`. 
-12. Twój branch ze wszystkimi commitami powinien znajdować się na GitHub'ie, upewnij się tutaj: https://github.com/infoshareacademy/jjdzr4-homeworks/branches
-13. Chcesz dodać kolejne zmiany? commit i push ... i tak aż do ukończenia zadania :tada:
-14. W razie potrzeby — łap mnie na Slacku :calling:
-
-
 ## Punktacja
 
 Do zdobycia jest :five: pkt.
